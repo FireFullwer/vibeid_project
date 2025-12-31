@@ -6,7 +6,7 @@ from aiogram.types import LabeledPrice, PreCheckoutQuery
 # Вставь свой токен здесь
 API_TOKEN = '8258664382:AAFjkg6U-TInnaXEtpfXaiqcgZ0zS0nlYQs'
 # Ссылка на твой Mini App (которую ты получишь от Vercel)
-APP_URL = 'https://google.com' 
+APP_URL = 'https://vibeid-project.vercel.app'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
@@ -55,4 +55,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
