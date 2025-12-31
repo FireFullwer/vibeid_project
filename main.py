@@ -21,7 +21,7 @@ async def start_handler(message: types.Message):
     markup = types.InlineKeyboardMarkup(inline_keyboard=kb)
     
     await message.answer(
-        f"Салам, {message.from_user.first_name}! 👋\n\n"
+        f"Привет, {message.from_user.first_name}! 👋\n\n"
         "Добро пожаловать в **VibeID** — сервис для создания твоих уникальных виджетов.\n\n"
         "Нажми кнопку ниже, чтобы начать!",
         reply_markup=markup,
@@ -57,3 +57,4 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
